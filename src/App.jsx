@@ -1,14 +1,28 @@
-import UseReducer from "./Hooks/UseReducer"
+import LearnRedux from "./ReduxAsyncCrud/LearnRedux"
 
 const App = () => {
+
+
   return (
     <>
 
 {/* hooks */}
-<UseReducer/>
+{/* <UseReducer/> */}
+
+<LearnRedux/>
+
 
     </>
   )
 }
 
 export default App
+
+
+
+// useLayoutEffect -> before screen start , synchronous
+
+// useEffectOnce(() => {
+//   // This effect runs once after the initial render
+//   console.log('Component mounted');
+// });0
