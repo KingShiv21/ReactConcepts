@@ -1,4 +1,5 @@
 import LearnRedux from "./ReduxAsyncCrud/LearnRedux"
+import Content from "./ReduxProper/Content"
 
 const App = () => {
 
@@ -9,7 +10,9 @@ const App = () => {
 {/* hooks */}
 {/* <UseReducer/> */}
 
-<LearnRedux/>
+{/* <LearnRedux/> */}
+
+<Content/>
 
 
     </>
