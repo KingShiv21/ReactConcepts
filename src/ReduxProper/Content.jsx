@@ -26,7 +26,7 @@ const Content = () => {
   }
 
   const deleteHandler = (gameId) =>{
-    dispatch(deleteGame({gameId})).then(()=>dispatch(getGames()))
+    dispatch(deleteGame({gameId}))
   }
 
 
