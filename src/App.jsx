@@ -1,3 +1,4 @@
+import Infinite from "./InfiniteLoad/Infinite"
 import LearnRedux from "./ReduxAsyncCrud/LearnRedux"
 import Content from "./ReduxProper/Content"
 
@@ -12,7 +13,9 @@ const App = () => {
 
 {/* <LearnRedux/> */}
 
-<Content/>
+{/* <Content/> */}
+
+<Infinite/>
 
 
     </>
