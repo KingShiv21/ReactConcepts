@@ -22,6 +22,7 @@ const gamesDataSlice = createSlice({
     builder
 
 // get games
+
       .addCase(getGames.pending, (state) => {
         state.loading = true;
       })
@@ -30,6 +31,7 @@ const gamesDataSlice = createSlice({
         state.loading = false;
         if (action.payload.status == "001") {
           state.data = action.payload.data;
+          
         }else{
           state.warning = action.payload.message || action.payload.Backend_Error ||"Something went wrong!"
         }

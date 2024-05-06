@@ -11,7 +11,6 @@ const Content = () => {
   const warning = useSelector(store => store.gamesData.warning)
   const success = useSelector(store => store.gamesData.success)
 
-  const [data , setData] = useState([])
 
   if (error) {
     alert(error)
@@ -30,10 +29,6 @@ const Content = () => {
   }
 
 
-  useEffect(() => {
-    setData(gamesData);
-  }, [gamesData]);
-
   useEffect(()=>{
     dispatch(getGames())
   },[])
@@ -50,7 +45,7 @@ const Content = () => {
       <h1>....Loading data</h1>
       </>
       :
-      data?.map((res)=>{
+      gamesData?.map((res)=>{
         return(
           <>
           <div style={{display:"flex" , gap:10}}>
